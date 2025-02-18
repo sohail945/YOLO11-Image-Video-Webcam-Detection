@@ -3,7 +3,7 @@
 YOLO11 for real-time image, video, and webcam object detection.
 
 ## Overview
-This project utilizes YOLO11, a state-of-the-art object detection model, to detect objects in images, videos, and webcam streams with high accuracy and speed.
+This project utilizes YOLO11n, a state-of-the-art object detection model, to detect objects in images, videos, and webcam streams with high accuracy and speed.
 
 ## Features
 - **Real-time Detection**: Detect objects in images, videos, and live webcam feeds.
