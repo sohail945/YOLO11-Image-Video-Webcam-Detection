@@ -37,26 +37,6 @@ python detect.py --source video.mp4 --model yolo11n.pt
 python detect.py --source 0 --model yolo11n.pt
 ```
 
-## Example Code
-Create a `detect.py` file and add the following code:
-```python
-from ultralytics import YOLO
-import cv2
-import argparse
-
-def detect(source, model):
-    model = YOLO(model)
-    results = model(source, show=True)
-    cv2.waitKey(0)
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--source", type=str, required=True, help="Path to image, video, or webcam (0)")
-    parser.add_argument("--model", type=str, default="yolo11n.pt", help="Path to YOLO11 model")
-    args = parser.parse_args()
-    detect(args.source, args.model)
-```
-
 ## Acknowledgments
 - [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics)
 - OpenCV for image processing
